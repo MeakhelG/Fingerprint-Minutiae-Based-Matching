@@ -1,4 +1,4 @@
-cd C:/Users/inez/Downloads/Fingerprint-Matching (minutiae)/Fingerprint-Matching (minutiae)/input
+cd C:/Users/inez/Downloads/Fingerprint-Matching (minutiae)/Fingerprint-Matching (minutiae)/input/to/your/folder
 git init
 git remote add origin https://github.com/USERNAME/REPOSITORY.git
 git add .
