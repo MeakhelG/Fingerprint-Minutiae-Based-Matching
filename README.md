@@ -6,7 +6,9 @@ Dokumen ini bertujuan untuk menjelaskan program Pencocokan Sidik Jari yang dikem
 Program ini terdiri dari tiga segmen kode yang berbeda, yang melakukan berbagai tahap dalam proses pengolahan sidik jari. Tujuan utama program ini adalah membandingkan sidik jari dan mengidentifikasi kemungkinan kecocokan.
 
 ## Prasyarat
-Syarat-syarat 
+Syarat-syarat sebelum menjalankan Program Pencocokan Sidik Jari berdasarkan Minutiae Based Matching adalah sebagai berikut:
+1. Telah memiliki Pyhton minimal versi 3.
+2. Telah mengunduh package opencv-python, numpy, matplotlib.pyplot, skimage.feature, glob, dan os.
 
 ## Segmen Kode 1: Penghapusan Latar Belakang
 ![1](https://github.com/anasm20/Fingerprint-Matching/assets/112882511/5833aaba-9cb7-4ea9-8562-eac7ae9a552f)
