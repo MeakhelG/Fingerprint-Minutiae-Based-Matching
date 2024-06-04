@@ -51,8 +51,8 @@ Gambar yang dihasilkan pada Langkah 5 dikonversi menjadi gambar biner, dan berba
 Algoritma Thinning atau Skeletonization diterapkan pada gambar biner, dan hasilnya disimpan.
 
 ## Segmen Kode 3: Ekstraksi Minutiae 
-![Screenshot 2024-06-04 111051](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/a298ab10-2c1a-47c1-93f1-a6c7e99d798f)
-![Screenshot 2024-06-04 111032](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/ea9f353e-4164-49e1-b371-127d3f6ae45d)
+![Screenshot 2024-06-04 194056](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/be554f7c-87b2-432a-86d2-289c44692d28)
+![Screenshot 2024-06-04 194026](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/72ed0242-dbf1-4810-abea-b1f2178f2383)
 
 
 ### Langkah 1: Memuat Gambar Referensi
