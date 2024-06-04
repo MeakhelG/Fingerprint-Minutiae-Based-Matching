@@ -31,8 +31,10 @@ Thresholding dilakukan setelah citra dikonversi ke citra grayscale. Tujuannya ad
 Algoritma Thinning atau Skeletonization diterapkan pada gambar biner, dan hasilnya disimpan. Dilakukan thinning pada citra biner untuk mendapatkan garis tengah sidik jari. Thinning adalah proses untuk mengurangi lebar garis sehingga menjadi satu piksel lebar.
 
 ## Segmen Kode 3: Ekstraksi Minutiae 
-![Screenshot 2024-06-04 111051](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/a298ab10-2c1a-47c1-93f1-a6c7e99d798f)
-![Screenshot 2024-06-04 111032](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/ea9f353e-4164-49e1-b371-127d3f6ae45d)
+
+![Screenshot 2024-06-05 061039](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/7eda2abe-d651-436e-9246-e8b6366d752c)
+
+
 
 ### Langkah 1: Memuat Gambar Referensi
 Gambar referensi ('input_img') dimuat dan dikonversi menjadi citra grayscale.
