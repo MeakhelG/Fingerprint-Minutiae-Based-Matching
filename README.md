@@ -11,7 +11,7 @@ Syarat-syarat sebelum menjalankan Program Pencocokan Sidik Jari berdasarkan Minu
 2. Telah mengunduh package opencv-python, numpy, matplotlib.pyplot, skimage.feature, glob, dan os.
 
 ## Segmen Kode 1: Penghapusan Latar Belakang
-![1](https://github.com/anasm20/Fingerprint-Matching/assets/112882511/5833aaba-9cb7-4ea9-8562-eac7ae9a552f)
+![Screenshot 2024-06-04 110547](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/0a9b9c3c-1877-4993-9acf-e6e5b5c80ba4)
 
 ### Langkah 1: Memuat Gambar
 Pada langkah ini, sebuah gambar input (misalnya, ‘./input/f1.jpeg’) dimuat menggunakan OpenCV dan ditampilkan dalam sebuah jendela.
@@ -23,7 +23,11 @@ Penghapusan latar belakang dilakukan dengan menggunakan algoritma GrabCut. Sebua
 Latar belakang ditambahkan kembali ke gambar, dan hasilnya disimpan dalam file terpisah ('input.jpg').
 
 ## Segmen Kode 2: Deteksi dan Pemrosesan Fitur
-![2](https://github.com/anasm20/Fingerprint-Matching/assets/112882511/a91810b6-a0b8-42f6-b674-895f8a127843)
+![Screenshot 2024-06-04 110711](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/24a8371d-bf3f-4bc1-befd-c24df9eef468)
+![Screenshot 2024-06-04 110736](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/b45ea42d-e2fe-46da-aae7-3270346e8123)
+![Screenshot 2024-06-04 110749](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/d5e03bf3-9994-4d5d-bc16-ce12c0436499)
+
+![Screenshot 2024-06-04 110813](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/cce25c0c-5e7a-4583-a2b0-40e73a99debc)
 
 ### Langkah 1: Memuat Gambar
 Gambar yang telah diproses dalam segmen kode sebelumnya ('input.jpg') dimuat.
