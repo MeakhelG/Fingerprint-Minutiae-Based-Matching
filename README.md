@@ -1,10 +1,12 @@
-# Dokumentasi untuk Program Pencocokan Sidik Jari
+# Dokumentasi Program Pencocokan Sidik Jari berdasarkan Minutiae Based Matching
 Kode asli berasal dari https://github.com/aasthac67/Fingerprint-Matching
 
 ## Pendahuluan
 Dokumen ini bertujuan untuk menjelaskan program Pencocokan Sidik Jari yang dikembangkan untuk sistem masuk. Kode program ini awalnya berasal dari repositori GitHub milik "aasthac67" dan dikembangkan lebih lanjut oleh "anasm20".
-
 Program ini terdiri dari tiga segmen kode yang berbeda, yang melakukan berbagai tahap dalam proses pengolahan sidik jari. Tujuan utama program ini adalah membandingkan sidik jari dan mengidentifikasi kemungkinan kecocokan.
+
+## Prasyarat
+Syarat-syarat 
 
 ## Segmen Kode 1: Penghapusan Latar Belakang
 ![1](https://github.com/anasm20/Fingerprint-Matching/assets/112882511/5833aaba-9cb7-4ea9-8562-eac7ae9a552f)
