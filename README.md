@@ -10,9 +10,8 @@ Di bawah ini, kami akan memulai dengan prasyarat yang diperlukan untuk menjalank
 
 ## Prasyarat
 Syarat-syarat sebelum menjalankan Program Pencocokan Sidik Jari berdasarkan Minutiae Based Matching adalah sebagai berikut:
-1. Telah memiliki Pyhton minimal versi 3.
-1. Telah memiliki Pyhton minimal versi 3.11.4
-2. Telah mengunduh package opencv-python, numpy, matplotlib.pyplot, skimage.feature, glob, dan os.
+1. Telah memiliki Pyhton minimal versi 3.11.4.
+2. Telah mengunduh package opencv-python, numpy, matplotlib.pyplot, skimage.feature, glob, dan os dengan benar.
 
 ## Segmen Kode 1 : Penghapusan Latar Belakang
 
@@ -22,7 +21,7 @@ Syarat-syarat sebelum menjalankan Program Pencocokan Sidik Jari berdasarkan Minu
 Pada langkah ini, sebuah gambar input (misalnya, ‘./input/f1.jpeg’) dimuat menggunakan OpenCV dan ditampilkan dalam sebuah jendela.
 
 ## Langkah 2: Penghapusan Latar Belakang
-Penghapusan latar belakang dilakukan dengan menggunakan algoritma K-MEANS. 
+Penghapusan latar belakang dilakukan dengan menggunakan algoritma K-MEANS, lalu mengubah gambar menjadi array 2D, menentukan jumlah kluster
 
 ## Segmenn Kode 2 : Proses Filtering
 Latar belakang ditambahkan kembali ke gambar, dan hasilnya disimpan dalam file t
