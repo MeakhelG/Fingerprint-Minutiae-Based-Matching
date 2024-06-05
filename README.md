@@ -14,16 +14,18 @@ Syarat-syarat sebelum menjalankan Program Pencocokan Sidik Jari berdasarkan Minu
 2. Telah mengunduh package opencv-python, numpy, matplotlib.pyplot, skimage.feature, glob, dan os dengan benar.
 
 ## Diagram Alur Algoritma
+![PCD drawio](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113084879/23735914-8d15-4258-a076-85e496350a6e)
 
 
 ## Segmen Kode 1 : Penghapusan Latar Belakang
 ![Screenshot 2024-06-04 110547](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/0a9b9c3c-1877-4993-9acf-e6e5b5c80ba4)
 
-## Langkah 1: Memuat Gambar
+### Langkah 1: Memuat Gambar
 Pada langkah ini, sebuah gambar input (misalnya, ‘./input/f1.jpeg’) dimuat menggunakan OpenCV dan ditampilkan dalam sebuah jendela.
 
-## Langkah 2: Penghapusan Latar Belakang
-Penghapusan latar belakang dilakukan dengan menggunakan algoritma K-MEANS, lalu mengubah gambar menjadi array 2D, menentukan jumlah kluster
+### Langkah 2: Penghapusan Latar Belakang
+Penghapusan latar belakang dilakukan dengan menggunakan algoritma K-MEANS, lalu mengubah gambar menjadi array 2D, menentukan jumlah kluster, inisialisasi centroid, masking, dan mengubah background menjadi putih.
+
 
 ## Segmenn Kode 2 : Proses Filtering
 Latar belakang ditambahkan kembali ke gambar, dan hasilnya disimpan dalam file t
@@ -34,16 +36,22 @@ Latar belakang ditambahkan kembali ke gambar, dan hasilnya disimpan dalam file t
 
 ### Langkah 1: Memuat Gambar
 Gambar yang dihasilkan pada Langkah 1 dikonversi menjadi gambar biner.
+
 ### Langkah 2: Menggunakan Proses High Boots Filtering
 Meningkatkan ketajaman gambar dengan mengurangi komponen kabur dari gambar asli.
-### Langkah 3 : Menggunakan Grayscale Filtering
 
-### Langkah 4 : Fungsi CLAHE (Histogram)
+### Langkah 3 : Menggunakan Grayscale Transformation
+Gambar yang telah ditajamkan oleh proses High Boots Filtering perlu diubah terlebih dahulu ke grayscale.
+
+### Langkah 4 : Histogram Equalization menggunakan fungsi CLAHE
 Teknik penyesuaian histogram yang membatasi kontras untuk memperbaiki kontras gambar.
+
 ### Langkah 5 : Binary Image
 Thresholding dilakukan setelah citra dikonversi ke citra grayscale. Tujuannya adalah untuk memisahkan area sidik jari dari latar belakang dengan cara mengubah citra grayscale menjadi citra biner, di mana piksel dengan intensitas di atas ambang batas akan dianggap sebagai bagian dari sidik jari, sedangkan piksel dengan intensitas di bawah ambang batas akan dianggap sebagai latar belakang.
+
 ### Langkah 6 : Thining 
 Algoritma Thinning atau Skeletonization diterapkan pada gambar biner, dan hasilnya disimpan. Dilakukan thinning pada citra biner untuk mendapatkan garis tengah sidik jari. Thinning adalah proses untuk mengurangi lebar garis sehingga menjadi satu piksel lebar.
+
 
 ## Segmen Kode 3: Ekstraksi Minutiae 
 ![Screenshot 2024-06-05 061047](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/7955a94c-c0d3-4ce9-812f-a9816672acaa)
@@ -51,15 +59,20 @@ Algoritma Thinning atau Skeletonization diterapkan pada gambar biner, dan hasiln
 
 
 ### Langkah 1: Memuat Gambar Referensi
-Gambar referensi ('input_img') dimuat dan dikonversi menjadi citra grayscale. Matcher berbasis Flann digunakan untuk mengidentifikasi kecocokan antara titik-t
+Gambar referensi ('input_img') dimuat dan dikonversi menjadi citra grayscale. Matcher berbasis Flann digunakan untuk mengidentifikasi kecocokan antara titik-titik..........................................
+
 ### Langkah 4: Visualisasi Kecocokan
 Kecocokan antara gambar referensi dan gambar lainnya divisualisasikan, dan diberitahu apakah kecocokan ditemukan.
+
 ### Langkah 3 : Ekstrasi Minutiae
 Setelah mendapatkan garis tengah, dilakukan iterasi pada setiap piksel pada citra hasil thinning untuk menemukan minutiae. Minutiae diidentifikasi berdasarkan pola garis tengah. Minutiae dapat berupa titik bifurkasi (terbagi menjadi dua) atau titik ujung (berakhir). Mengidentifikasi titik-titik penting seperti titik ujung dan titik bifurkasi dari garis tengah yang telah diperoleh melalui thinning.
+
 ### Langkah 4 : Pencocokan Minutiae
 Setelah mendapatkan minutiae dari kedua gambar sidik jari, dilakukan pencocokan minutiae antara keduanya. Pencocokan dilakukan dengan mencari minutiae dari gambar pertama yang memiliki jarak terdekat dengan minutiae dari gambar kedua, dengan memperhitungkan threshold jarak yang telah ditentukan. Menggunakan KD Tree untuk mencocokkan minutiae dari dua gambar sidik jari. Pencocokan dilakukan dengan mencari minutiae pada kedua gambar yang memiliki jarak terdekat satu sama lain, dengan memperhitungkan threshold jarak yang telah ditentukan.
+
 ### Langkah 5 : Penentuan Kecocokan Sidik Jari 
 Berdasarkan hasil pencocokan minutiae, ditentukan apakah kedua sidik jari cocok atau tidak berdasarkan rasio jumlah minutiae yang cocok terhadap total jumlah minutiae pada masing-masing gambar.
+
 
 ## Ringkasan
 Program Pencocokan Sidik Jari ini awalnya dikembangkan oleh "aasthac67" dan kemudian dikembangkan lebih lanjut oleh "anasm20". Program ini dihosting di repositori GitHub publik dan digunakan untuk menjalankan berbagai tahap pengolahan sidik jari serta menjelaskannya.  algoritma yang digunakan dalam kode tersebut adalah thresholding, thinning, ekstraksi minutiae, pencocokan minutiae menggunakan KD Tree, dan penentuan kecocokan sidik jari berdasarkan rasio jumlah minutiae yang cocok. KD-Tree digunakan untuk mencocokkan minutiae dari dua gambar sidik jari. Ini membantu dalam mencari minutiae pada gambar kedua yang memiliki jarak terdekat dengan minutiae pada gambar pertama dengan cara yang efisien, sehingga membantu dalam pencocokan sidik jari yang akurat.
