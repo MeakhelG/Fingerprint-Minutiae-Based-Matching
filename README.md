@@ -13,8 +13,10 @@ Syarat-syarat sebelum menjalankan Program Pencocokan Sidik Jari berdasarkan Minu
 1. Telah memiliki Pyhton minimal versi 3.11.4.
 2. Telah mengunduh package opencv-python, numpy, matplotlib.pyplot, skimage.feature, glob, dan os dengan benar.
 
-## Segmen Kode 1 : Penghapusan Latar Belakang
+## Diagram Alur Algoritma
 
+
+## Segmen Kode 1 : Penghapusan Latar Belakang
 ![Screenshot 2024-06-04 110547](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/0a9b9c3c-1877-4993-9acf-e6e5b5c80ba4)
 
 ## Langkah 1: Memuat Gambar
