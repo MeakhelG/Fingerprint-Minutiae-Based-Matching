@@ -1,4 +1,12 @@
-Program merupakan pengembangan dari program blbla yang mana program ini terdiri dari tiga segmen kode yang berbeda, yang melakukan berbagai
+## Pendahuluan
+
+Sidik jari telah lama menjadi salah satu metode utama untuk identifikasi personal dalam berbagai aplikasi, mulai dari forensik hingga sistem keamanan digital. Dengan kemajuan teknologi, metode otomatis untuk pencocokan sidik jari telah berkembang pesat, memberikan akurasi dan efisiensi yang lebih tinggi dibandingkan metode manual. Salah satu teknik yang digunakan dalam pencocokan sidik jari adalah Minutiae Based Matching, yang fokus pada titik-titik khusus pada sidik jari, seperti bifurkasi dan titik ujung.
+
+Dalam proyek ini, kami akan mengeksplorasi Program Pencocokan Sidik Jari berbasis Minutiae, yang melibatkan beberapa tahap pemrosesan gambar dan analisis. Program ini awalnya dikembangkan oleh "aasthac67" dan kemudian dikembangkan lebih lanjut oleh "anasm20", serta dihosting di repositori GitHub publik. Kami akan membahas prasyarat untuk menjalankan program ini, berbagai segmen kode yang terlibat, serta langkah-langkah pemrosesan dari penghapusan latar belakang hingga pencocokan minutiae dan penentuan kecocokan sidik jari.
+
+Melalui langkah-langkah ini, kita akan melihat bagaimana algoritma seperti thresholding, thinning, dan penggunaan KD Tree untuk pencocokan minutiae diterapkan untuk mencapai hasil yang akurat dan efisien dalam pencocokan sidik jari. Program ini memanfaatkan beberapa paket Python seperti OpenCV, numpy, dan matplotlib untuk mengolah dan menganalisis citra sidik jari.
+
+Di bawah ini, kami akan memulai dengan prasyarat yang diperlukan untuk menjalankan program ini, diikuti dengan segmen-segmen kode yang menjelaskan setiap tahap pemrosesan sidik jari secara detail.
 
 ## Prasyarat
 Syarat-syarat sebelum menjalankan Program Pencocokan Sidik Jari berdasarkan Minutiae Based Matching adalah sebagai berikut:
@@ -48,3 +56,6 @@ Berdasarkan hasil pencocokan minutiae, ditentukan apakah kedua sidik jari cocok 
 
 ## Ringkasan
 Program Pencocokan Sidik Jari ini awalnya dikembangkan oleh "aasthac67" dan kemudian dikembangkan lebih lanjut oleh "anasm20". Program ini dihosting di repositori GitHub publik dan digunakan untuk menjalankan berbagai tahap pengolahan sidik jari serta menjelaskannya.  algoritma yang digunakan dalam kode tersebut adalah thresholding, thinning, ekstraksi minutiae, pencocokan minutiae menggunakan KD Tree, dan penentuan kecocokan sidik jari berdasarkan rasio jumlah minutiae yang cocok. KD-Tree digunakan untuk mencocokkan minutiae dari dua gambar sidik jari. Ini membantu dalam mencari minutiae pada gambar kedua yang memiliki jarak terdekat dengan minutiae pada gambar pertama dengan cara yang efisien, sehingga membantu dalam pencocokan sidik jari yang akurat.
+## Referensi
+https://github.com/aasthac67/Fingerprint-Matching
+https://github.com/drat/Program-Pencocokan-Sidik-Jari
