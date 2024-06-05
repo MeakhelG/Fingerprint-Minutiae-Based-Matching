@@ -53,7 +53,7 @@ Algoritma Thinning atau Skeletonization diterapkan pada gambar biner, dan hasiln
 Gambar referensi ('input_img') dimuat dan dikonversi menjadi citra grayscale. Matcher berbasis Flann digunakan untuk mengidentifikasi kecocokan antara titik-t
 ### Langkah 4: Visualisasi Kecocokan
 Kecocokan antara gambar referensi dan gambar lainnya divisualisasikan, dan diberitahu apakah kecocokan ditemukan.
-#### Langkah 3 : Ekstrasi Minutiae
+### Langkah 3 : Ekstrasi Minutiae
 Setelah mendapatkan garis tengah, dilakukan iterasi pada setiap piksel pada citra hasil thinning untuk menemukan minutiae. Minutiae diidentifikasi berdasarkan pola garis tengah. Minutiae dapat berupa titik bifurkasi (terbagi menjadi dua) atau titik ujung (berakhir). Mengidentifikasi titik-titik penting seperti titik ujung dan titik bifurkasi dari garis tengah yang telah diperoleh melalui thinning.
 ### Langkah 4 : Pencocokan Minutiae
 Setelah mendapatkan minutiae dari kedua gambar sidik jari, dilakukan pencocokan minutiae antara keduanya. Pencocokan dilakukan dengan mencari minutiae dari gambar pertama yang memiliki jarak terdekat dengan minutiae dari gambar kedua, dengan memperhitungkan threshold jarak yang telah ditentukan. Menggunakan KD Tree untuk mencocokkan minutiae dari dua gambar sidik jari. Pencocokan dilakukan dengan mencari minutiae pada kedua gambar yang memiliki jarak terdekat satu sama lain, dengan memperhitungkan threshold jarak yang telah ditentukan.
