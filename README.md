@@ -18,6 +18,12 @@ Syarat-syarat sebelum menjalankan Program Pencocokan Sidik Jari berdasarkan Minu
 
 ![Screenshot 2024-06-04 110547](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/0a9b9c3c-1877-4993-9acf-e6e5b5c80ba4)
 
+## Langkah 1: Memuat Gambar
+Pada langkah ini, sebuah gambar input (misalnya, ‘./input/f1.jpeg’) dimuat menggunakan OpenCV dan ditampilkan dalam sebuah jendela.
+
+## Langkah 2: Penghapusan Latar Belakang
+Penghapusan latar belakang dilakukan dengan menggunakan algoritma K-MEANS. 
+
 ## Segmenn Kode 2 : Proses Filtering
 Latar belakang ditambahkan kembali ke gambar, dan hasilnya disimpan dalam file t
 ![Screenshot 2024-06-04 110711](https://github.com/MeakhelG/Fingerprint-Minutiae-Based-Matching/assets/113085615/24a8371d-bf3f-4bc1-befd-c24df9eef468)
@@ -26,7 +32,7 @@ Latar belakang ditambahkan kembali ke gambar, dan hasilnya disimpan dalam file t
 
 
 ### Langkah 1: Memuat Gambar
-Gambar yang dihasilkan pada Langkah 1 dikonversi menjadi gambar biner, dan berba
+Gambar yang dihasilkan pada Langkah 1 dikonversi menjadi gambar biner.
 ### Langkah 2: Menggunakan Proses High Boots Filtering
 Meningkatkan ketajaman gambar dengan mengurangi komponen kabur dari gambar asli.
 ### Langkah 3 : Menggunakan Grayscale Filtering
